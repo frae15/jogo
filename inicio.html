@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="telainicial/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio src="telainicial/musicatema.mp3" id="musicatema"></audio>
+    <div class="telamenu">
+        <div class="creditos">
+            <br> <br>
+            <h1> Créditos</h1>
+
+        <h3>Desenvolvedores</h3>
+        <p>
+            Gustavo André Pontes de Faria <br>
+            Leonardo da Silva
+        </p>
+
+        <h3>Designers Gráficos e Animadores</h3>
+        <p>
+            Pedro Henrique de Lima Santos <br>
+            Rafael Dias Machado <br>
+            Thiago dos Reis Lacerda Araújo
+        </p>
+
+        <h3>Outros Contribuidores</h3>
+        <p>
+            Ivaldo Marques Batista <br>
+            Levi Salles <br>
+            Marciel Silva Santos <br>
+            Paulo Vitor de Souza Perri 
+
+
+        </p>
+
+        <button class="voltar" onclick="voltarmenu()">Voltar</button>
+        </div>
+        <div class="musicas">
+            <div class="musicadiv" onclick="musica()">
+            </div>
+            <input type="range" min="0" max="100" value="100" class="volumemusica" onclick="volmusica()">
+        </div>
+        <div class="todosbotoes">
+            <button class="botaoiniciar botao" onclick="iniciarjogo()" >Iniciar</button>
+            <button class="botaocréditos botao" onclick="creditos()" >Créditos</button>
+            <button class="botaosair botao" onclick="window.close()" >Sair</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script rel="stylesheet" type="text/javascript" src="telainicial/script.js"></script>
+</body>
+
+</html>

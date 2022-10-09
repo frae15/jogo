@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,300&family=Libre+Baskerville&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: rgb(57, 209, 110);
+}
+
+button{
+    width: 30vw;
+    height: 8vh;
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    background: transparent;
+    position: relative;  
+    border: none;
+    padding: 10px;
+}
+
+.voltar{
+    width: 7.5vw;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    background: rgb(231, 237, 230);
+    position: absolute;
+    right: 10px;
+}
+
+.botao:hover:enabled{ 
+    cursor: pointer;
+    color: white;
+    background: rgb(105,217,73);
+    background: linear-gradient(90deg, rgba(105,217,73,1) 48%, rgba(105,217,73,0.14359247116815477) 100%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.botao:hover:enabled:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgb(12, 169, 6), rgba(140, 0, 255, 0));
+    z-index: -1;
+    margin: -3px;
+    border-radius: 10px; 
+}
+.telamenu{
+    width: 1080px;
+    height: 540px;
+    position: absolute;
+    flex-direction: column;
+    background-image: url("sala de aula.png");
+    background-size: 100% 100%;
+    display: block;
+    margin: 0px auto;
+    position: absolute;
+    transform: translate(21%, 15%);
+    border: 2px solid black;
+    overflow:hidden;
+
+}
+.todosbotoes{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+
+}
+.musicadiv{
+    width: 4vw;
+    height: 6vh;
+    margin-left: 2vw;
+    background-image: url("musicadesligada.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.jogo{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.creditos{
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+canvas{
+    border: 0;
+    width: 98vw;
+    height: 98vh;
+}
+.musicas{
+    display: flex;
+    width: 1080px;
+}
